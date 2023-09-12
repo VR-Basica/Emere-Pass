@@ -1,10 +1,10 @@
+package Apps;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-
-public class SelectProdutos {
+public class SelectPedidos {
     public static void main(String[] args) {
         String jdbcUrl = "jdbc:mysql://localhost:3306/seu_banco_de_dados";
         String username = "seu_usuario";
@@ -12,17 +12,13 @@ public class SelectProdutos {
 
         try (Connection connection = DriverManager.getConnection(jdbcUrl, username, password)) {
             Statement statement = connection.createStatement();
-            String sql = "SELECT * FROM produtos";
+            String sql = "SELECT * FROM pedidos";
             ResultSet resultSet = statement.executeQuery(sql);
 
             while (resultSet.next()) {
-                String nome = resultSet.getString("nome");
-                double preco = resultSet.getDouble("preco");
-                String categoria = resultSet.getString("categoria");
+                String numeroFicha = resultSet.getString("numero_ficha");
 
-                System.out.println("Nome: " + nome);
-                System.out.println("Preço: R$" + preco);
-                System.out.println("Categoria: " + categoria);
+                System.out.println("Número de Ficha: " + numeroFicha);
                 System.out.println("-----------------------------");
             }
         } catch (SQLException e) {
@@ -30,3 +26,4 @@ public class SelectProdutos {
         }
     }
 }
+

@@ -1,3 +1,4 @@
+package Apps;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -7,7 +8,7 @@ import java.util.Scanner;
 public class AppCliente {
     public static void main(String[] args) {
         List<Produto> cardapio = new ArrayList<>();
-        cardapio.add(new Produto(0, "Bolo de Chocolate", 12.99, "Doces"));
+        cardapio.add(new Produto("Bolo de Chocolate", 12.99, "Doces"));
         cardapio.add(new Produto("Coxinha", 3.50, "Salgados"));
         cardapio.add(new Produto("Refrigerante", 4.99, "Bebidas"));
 
