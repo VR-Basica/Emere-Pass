@@ -2,32 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-class Cliente {
-    private String nome;
-    private List<Produto> carrinho;
-    
-    public Cliente(String nome) {
-        this.nome = nome;
-        carrinho = new ArrayList<>();
-    }
 
-    public void adicionarProdutoAoCarrinho(Produto produto) {
-        carrinho.add(produto);
-    }
-
-    public List<Produto> getCarrinho() {
-        return carrinho;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-}
 
 public class AppCliente {
     public static void main(String[] args) {
         List<Produto> cardapio = new ArrayList<>();
-        cardapio.add(new Produto("Bolo de Chocolate", 12.99, "Doces"));
+        cardapio.add(new Produto(0, "Bolo de Chocolate", 12.99, "Doces"));
         cardapio.add(new Produto("Coxinha", 3.50, "Salgados"));
         cardapio.add(new Produto("Refrigerante", 4.99, "Bebidas"));
 
@@ -82,4 +62,3 @@ public class AppCliente {
         }
     }
 }
-

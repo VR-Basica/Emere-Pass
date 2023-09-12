@@ -20,6 +20,9 @@ class Produto {
         this.categoria = categoria;
     }
 
+    public Produto(String string, double d, String string2) {
+    }
+
     public int getId() {
         return id;
     }
