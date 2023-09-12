@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Scanner;
 
 
-
 public class AppCliente {
     public static void main(String[] args) {
         List<Produto> cardapio = new ArrayList<>();
