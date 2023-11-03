@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+fx:controller="com.example.javafxproject.CadastroFuncionarioController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <VBox alignment="CENTER" spacing="20.0">
+        <Label text="Cadastro Funcionario" styleClass="formTitle" />
+        <Label text="Utilize o formulário abaixo para acessar a lanchonete" />
+    </VBox>
+
+    <Label text="Nome" />
+    <TextField fx:id="txfNome" />
+
+    <Label text="E-mail" />
+    <TextField fx:id="txfEmail" />
+
+    <Label text="Senha" />
+    <TextField fx:id="txfSenha" />
+
+
+    <VBox alignment="CENTER_RIGHT" spacing="20.0">
+        <Button text="Cadastrar" onAction="#onActionCadastrar" />
+    </VBox>
+
+    
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+
+</VBox>
+
+</VBox>
+
+

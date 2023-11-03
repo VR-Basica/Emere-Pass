@@ -1,0 +1,27 @@
+VBox {
+  -fx-padding: 30px;
+}
+
+.formTitle {
+  -fx-font-size: 20px;
+  -fx-font-weight: bold;
+}
+
+
+Label {
+  -fx-font-size: 13px;
+}
+
+TextField {
+  -fx-font-size: 13px;
+  -fx-padding: 10px;
+}
+
+.formTitle {
+  -fx-font-size: 20px;
+  -fx-font-weight: bold;
+}
+
+.labelField {
+  -fx-font-weight: bold;
+}
